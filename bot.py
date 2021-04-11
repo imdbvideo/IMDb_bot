@@ -11,7 +11,7 @@ import json
 import imdb
 import os
 PORT = int(os.environ.get('PORT', 5000))
-api_key= #Enter your Telegram bot token
+api_key= 1787622148:AAHHN8r3db1UPdZ4GbpVNcL1Zl0o0tllGBM
 ia = imdb.IMDb() 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
