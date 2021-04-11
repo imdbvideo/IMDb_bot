@@ -9,6 +9,8 @@ import urllib.request
 import json
 import imdb
 import os
+import urllib2
+
 PORT = int(os.environ.get('PORT', 5000))
 api_key = "5059b1d7" 
 ia = imdb.IMDb() 
@@ -45,7 +47,7 @@ def reply(update, context):
     ans=''
     ans+='*'+data['Title']+'* ('+data['Year']+')'+'\n\n'
     ans+='*IMDb Rating*: '+data['imdbRating']+'\n'
-    ans+='*IMDb Title*: '+data['imdbID']+'\n'
+    ans+='*IMDb Url*: https://www.imdb.com/title/'+data['imdbID']+'\n'
     ans+='*Rated*: '+data['Rated']+' \n'
     ans+='*Runtime*: '+data['Runtime']+' \n'
     ans+='*Cast*: '+data['Actors']+'\n'
