@@ -9,8 +9,6 @@ import urllib.request
 import json
 import imdb
 import os
-import urllib2
-
 PORT = int(os.environ.get('PORT', 5000))
 api_key = "5059b1d7" 
 ia = imdb.IMDb() 
