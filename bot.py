@@ -11,7 +11,7 @@ import json
 import imdb
 import os
 PORT = int(os.environ.get('PORT', 5000))
-api_key= "1787622148:AAHHN8r3db1UPdZ4GbpVNcL1Zl0o0tllGBM"
+api_key= 1787622148:AAHHN8r3db1UPdZ4GbpVNcL1Zl0o0tllGBM
 ia = imdb.IMDb() 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -63,11 +63,11 @@ def main():
     dp.add_handler(MessageHandler(Filters.text, reply))
     dp.add_error_handler(error)
 
-    updater.start_webhook(listen="0.0.0.0",
-                         port=int(PORT),
-                        url_path="1787622148:AAHHN8r3db1UPdZ4GbpVNcL1Zl0o0tllGBM")
-   updater.bot.setWebhook('https://imdb-movie-bot.herokuapp.com/' + "1787622148:AAHHN8r3db1UPdZ4GbpVNcL1Zl0o0tllGBM")
-    updater.start_polling()
+   # updater.start_webhook(listen="0.0.0.0",
+                         # port=int(PORT),
+                        # url_path="1787622148:AAHHN8r3db1UPdZ4GbpVNcL1Zl0o0tllGBM")
+   # updater.bot.setWebhook('https://imdb-movie-bot.herokuapp.com/' + "1787622148:AAHHN8r3db1UPdZ4GbpVNcL1Zl0o0tllGBM")
+   updater.start_polling()
     updater.idle()
 
 
