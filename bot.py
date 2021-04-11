@@ -45,11 +45,13 @@ def reply(update, context):
     ans=''
     ans+='*'+data['Title']+'* ('+data['Year']+')'+'\n\n'
     ans+='*IMDb Rating*: '+data['imdbRating']+' \n'
+    ans+='*Rated*: '+data['Rated']+' \n'
+    ans+='*Runtime*: '+data['Runtime']+' \n'
     ans+='*Cast*: '+data['Actors']+'\n'
-    ans+='*Genre*: '+data['Genre']+'\n\n'
-    ans+='*imdbID*: '+data['imdbID']+'\n\n'
+    ans+='*Genre*: '+data['Genre']+'\n'
+    ans+='*IMDb Url*: '+data['imdbID']+'\n\n'
     ans+='*Plot*: '+data['Plot']+'\n\n'
-    ans+='*Link*: "http://www.omdbapi.com/" '+data['imdbID']+'\n'
+    ans+='*Link*: "http://www.omdbapi.com/ '+data['imdbID']"+'\n'
     ans+='[.]('+data['Poster']+')'
     update.message.reply_text(ans,parse_mode='markdown')  
 
