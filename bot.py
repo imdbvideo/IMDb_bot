@@ -17,6 +17,8 @@ logger = logging.getLogger(__name__)
 def start(update, context):
     update.message.reply_text('Hi! \nWelcome to the *IMDb Bot*. \nSend me the name of any movie or TV show to get its details. \nHappy viewing! \n \nCreated by [EveryDayEnjoy](https://everydayenjoy.com/)',parse_mode='markdown')
 
+def dmca(update, context):
+    update.message.reply_text('Hi! \nWe dont store any files on our *bot server!*.\n Everything is auto embedded by 3rd party website. \n [Submit DMCA / Copyright complain here](https://api.everydayenjoy.com/dmca) \n Thanking You! \n ',parse_mode='markdown')
 
 def help(update, context):
     update.message.reply_text('Send me the name of any movie to get its details. \nTry out "Avengers Endgame"')
