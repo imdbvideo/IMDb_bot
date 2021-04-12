@@ -52,7 +52,7 @@ def reply(update, context):
     ans+='*Genre*: '+data['Genre']+'\n\n'
 
     ans+='*Plot*: '+data['Plot']+'\n\n'
-    ans+='*Link*: http://www.omdbapi.com/?i='+data['imdbID']+'\n'
+    ans+='*Link*: [Watch Full Movie Online](http://www.omdbapi.com/?i='+data['imdbID']+')\n'
     ans+='[.]('+data['Poster']+')'
     update.message.reply_text(ans,parse_mode='markdown')  
 
