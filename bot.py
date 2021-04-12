@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Dec 25 20:24:17 2020
-@author: karan
-"""
+
 import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import urllib.request
@@ -18,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 
 def start(update, context):
-    update.message.reply_text('Hi! \nWelcome to the *IMDb Bot*. \nSend me the name of any movie or TV show to get its details. \nHappy viewing! \n \nCreated by [Karan Malik](https://karan-malik.github.io)',parse_mode='markdown')
+    update.message.reply_text('Hi! \nWelcome to the *IMDb Bot*. \nSend me the name of any movie or TV show to get its details. \nHappy viewing! \n \nCreated by [EveryDayEnjoy](https://everydayenjoy.com/)',parse_mode='markdown')
 
 
 def help(update, context):
