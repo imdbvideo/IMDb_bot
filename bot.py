@@ -49,12 +49,13 @@ def reply(update, context):
     ans+='*Rated*: '+data['Rated']+' \n'
     ans+='*Runtime*: '+data['Runtime']+' \n'
     ans+='*Cast*: '+data['Actors']+'\n'
-    ans+='*Poster*: []('+data['Poster']+')\n\n'
+    ans+='*Poster*: [#Images]('+data['Poster']+')\n'
     ans+='*Genre*: '+data['Genre']+'\n\n'
     
 
     ans+='*Plot*: '+data['Plot']+'\n\n'
-    ans+='[Watch Full Movie Online](http://www.omdbapi.com/?i='+data['imdbID']+')\n'
+    ans+='[#Watch Movie Online](http://www.omdbapi.com/?i='+data['imdbID']+')\n\n'
+    ans+='[#Download Movie](http://www.omdbapi.com/?i='+data['imdbID']+')\n'
     ans+='[.]('+data['Poster']+')'
     update.message.reply_text(ans,parse_mode='markdown')  
 
