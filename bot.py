@@ -21,7 +21,7 @@ def dmca(update, context):
     update.message.reply_text('Hi! \nWe dont store any files on our *bot server !*\nEverything is auto embedded by 3rd party website. \n[Submit DMCA / Copyright Complain Here .](https://api.everydayenjoy.com/dmca)\nThanking You! \n ',parse_mode='markdown')
 
 def help(update, context):
-    update.message.reply_text('Send me the name of any movie to get its details. \nTry out "Avengers Endgame"')
+    update.message.reply_text('Send me the name of any movie to get its details. \nTry out "Avengers Endgame" \n *For Dmca Type * /dmca')
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
@@ -57,7 +57,7 @@ def reply(update, context):
     
     ans+='[#Watch Movie Online](https://api.everydayenjoy.com/?title='+data['imdbID']+')\n\n'
     
-    ans+='[#Download Movie](http://www.omdbapi.com/?i='+data['imdbID']+')\n'
+    ans+='[#Download Movie](http://www.omdbapi.com/?i='+data['imdbID']+')\n\n'
     
     update.message.reply_text(ans,parse_mode='markdown')  
 
