@@ -57,7 +57,7 @@ def reply(update, context):
     
     ans+='*Stream*: [Click To Watch Movie Online](https://api.everydayenjoy.com/?imdb='+data['imdbID']+')\n\n'
     
-    ans+='*Download Via Torrent*')\n'
+    ans+='*Download Via Torrent*\n'
     ans+='*1337x.to*: [Torrent Link](https://1337x.to/sort-category-search/'+data['Title']+'/Movies/time/desc/1/)\n\n'
    
     
