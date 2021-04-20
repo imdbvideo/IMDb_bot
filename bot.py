@@ -64,9 +64,7 @@ ans+='[torrentgalaxy.to](https://torrentgalaxy.to): [Torrent Link](https://torre
 ans+='[thepiratebay10.org](https://torrentgalaxy.to): [Torrent Link](https://m.thepiratebay10.org/search/'+data['Title']+')\n\n'
 ans+='Subtitles for "'+data['Title']+'"\n'
 ans+='[opensubtitles.org](https://opensubtitles.org): [Direct Link](https://www.opensubtitles.org/en/search2/sublanguageid-all/moviename-'+data['Title']+')\n'
-
-    ans+='.\n\n'
-    update.message.reply_text(ans,parse_mode='markdown')  
+update.message.reply_text(ans,parse_mode='markdown')  
 
 
 def main():
