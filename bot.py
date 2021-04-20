@@ -55,9 +55,11 @@ def reply(update, context):
     
     ans+='*Plot*: '+data['Plot']+'\n\n'
     
-    ans+='[#Watch Movie Online](https://api.everydayenjoy.com/?title='+data['imdbID']+')\n\n'
+    ans+='*Stream*: [Click To Watch Movie Online](https://api.everydayenjoy.com/?imdb='+data['imdbID']+')\n\n'
     
-    ans+='[#Download Movie](http://www.omdbapi.com/?i='+data['imdbID']+')\n\n'
+    ans+='*Download Via Torrent*')\n'
+    ans+='*1337x.to*: [Torrent Link](https://1337x.to/sort-category-search/'+data['Title']'/Movies/time/desc/1/)\n\n'
+   
     
     ans+='.\n\n'
     update.message.reply_text(ans,parse_mode='markdown')  
