@@ -44,7 +44,7 @@ def reply(update, context):
     ans=''
     ans+='*'+data['Title']+'* ('+data['Year']+')'+'\n\n'
     ans+='*IMDb Rating*: '+data['imdbRating']+'\n'
-    ans+='*Title*: [#IMDb](https://www.imdb.com/title/'+data['imdbID']+')\n'
+    ans+='*Title*: [#IMDb Links](https://www.imdb.com/title/'+data['imdbID']+')\n'
     ans+='*Released*: '+data['Released']+' \n'
     ans+='*Rated*: '+data['Rated']+' \n'
     ans+='*Runtime*: '+data['Runtime']+' \n'
@@ -58,9 +58,12 @@ def reply(update, context):
     ans+='*Stream*: [Click To Watch Movie Online](https://api.everydayenjoy.com/?imdb='+data['imdbID']+')\n\n'
     
     ans+='*Download Via Torrent*\n'
-    ans+='*1337x.to*: [Torrent Link](https://1337x.to/sort-category-search/'+data['Title']+'/Movies/time/desc/1/)\n\n'
-   
-    
+    ans+='*[1337xx.to](https://www.1337xx.to/) *: [Torrent Link](https://www.1337xx.to/sort-category-search/'+data['Title']+'/Movies/time/desc/1/)\n'
+     ans+='*[ettv.be](https://www.ettv.be/) *: [Torrent Link](https://www.ettv.be/torrents-search.php?search='+data['Title']+')\n'
+    ans+='*[torrentgalaxy.to](https://torrentgalaxy.to) *: [Torrent Link](https://torrentgalaxy.to/torrents.php?search='+data['Title']+')\n'
+    ans+='*[thepiratebay10.org](https://torrentgalaxy.to) *: [Torrent Link](https://m.thepiratebay10.org/search/'+data['Title']+')\n\n'
+    ans+='*Subtitles for "'+data['Title']+'"*\n'
+    ans+='*[opensubtitles.org](https://opensubtitles.org) *: [Direct Link](https://www.opensubtitles.org/en/search2/sublanguageid-all/moviename-'+data['Title']+')\n'
     ans+='.\n\n'
     update.message.reply_text(ans,parse_mode='markdown')  
 
