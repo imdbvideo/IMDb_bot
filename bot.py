@@ -60,8 +60,7 @@ def reply(update, context):
     ans+='thepiratebay10.org : [Torrent Link](https://m.thepiratebay10.org/search/'+data['Title']+')\n\n'
     ans+='Subtitles for "'+data['Title']+'"\n'
     ans+='opensubtitles.org : [Direct Link](https://www.opensubtitles.org/en/search2/sublanguageid-all/moviename-'+data['Title']+')\n'
-
-update.message.reply_text(ans,parse_mode='markdown')  
+    update.message.reply_text(ans,parse_mode='markdown')  
 
 
 def main():
